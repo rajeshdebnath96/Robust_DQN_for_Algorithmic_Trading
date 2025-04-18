@@ -3,7 +3,7 @@ Reinforcement learning (RL) has shown promise in financial applications such as 
 <table>
 <tr>
   <td>
-    <img src="https://github.com/sreejeetm1729/Robust_RL_for_Algorithmic_Trading_ECE542/blob/main/NN%20Project%20Poster.jpg" style="width:500px">
+    <img src="https://github.com/sreejeetm1729/Robust_RL_for_Algorithmic_Trading_ECE542/blob/main/NN%20Project%20Poster.jpg" style="width:1000px">
  </td>
 </tr>
 
