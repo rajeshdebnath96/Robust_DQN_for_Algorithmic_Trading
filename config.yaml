@@ -1,0 +1,36 @@
+# ======================== Configuration File ========================
+# Environment hyperparameters
+algo_name: 'DQN'
+env_name: 'TradingSystem_v1'
+seed: 11
+train_eps: 200
+state_space_dim: 50  # lookback window length
+action_space_dim: 3  # actions: short (0), neutral (1), long (2)
+
+# Algorithm hyperparameters
+gamma: 0.95
+epsilon_start: 0.90
+epsilon_end: 0.01
+epsilon_decay: 500
+lr: 0.0001
+memory_capacity: 1000
+batch_size: 64
+target_update: 4
+hidden_dim: 128
+
+# Corruption parameters for robust RL
+rho: 0.1  # 10% chance to observe a corrupted reward
+corruption_type: 'flipped'  # flip the sign of the true reward when corrupted
+
+# Save settings
+save: true
+
+# Data settings
+train_tickers: ['ZM', 'TWTR', 'FB', 'MTCH', 'GOOG', 'PINS', 'SNAP', 'ETSY']
+test_tickers: ['IAC', 'ZNGA', 'BMBL', 'SOCL']
+start_date: '2020-01-01'
+end_date: 'today'  # will be replaced with current date
+
+# Output paths (will be auto-generated)
+result_path: null  # auto-generated
+model_path: null   # auto-generated 
